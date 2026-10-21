@@ -1,0 +1,30 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f5f8fb"><title>AI Privacy Lab | Crescere Digitali</title><meta name="description" content="Tre giochi interattivi di cybersecurity: privacy, dati personali e prompt injection. Per il corso CyberSecurity per ragazzi di Crescere Digitali."><link rel="stylesheet" href="style.css"></head><body>
+<header class="topbar"><img class="brand-logo" src="assets/logo-crescere-digitali.png" alt="Crescere Digitali"><div class="head-copy"><h1>AI Privacy Lab</h1><p>AI, privacy e attacchi agli assistenti intelligenti</p></div></header>
+<main class="shell">
+<section id="home" class="intro" aria-labelledby="main-title">
+ <div id="introPanel" class="intro-panel">
+  <div class="eyebrow">CYBERSECURITY PER RAGAZZI · INTELLIGENZA ARTIFICIALE</div>
+  <h1 id="main-title">AI Privacy Lab</h1>
+  <p class="intro-lead">Quanto può scoprire un'AI su di te? Quali informazioni è necessario condividere? E come può un documento esterno cercare di manipolare un assistente? <strong>Tre giochi, tre sfide di cybersecurity.</strong></p>
+  <p class="intro-details">I casi sono fittizi. Non serve un account, non vengono richiesti dati personali e tutto funziona direttamente nel browser.</p>
+  <button class="primary enter-btn" id="enterGameBtn" type="button">Entra nel gioco</button>
+ </div>
+ <div id="heroHub" class="hero hidden">
+  <div class="eyebrow">CYBERSECURITY PER RAGAZZI · AI E PRIVACY</div>
+  <h1>AI Privacy Lab</h1>
+  <p>Tre missioni interattive su tracce digitali, protezione dei dati e attacchi agli assistenti AI. Puoi ripetere ogni missione per migliorare il punteggio.</p>
+  <div class="score-pill">3 missioni · 16 casi · 24 decisioni sui dati</div>
+ </div>
+</section>
+<section id="mission-list" class="overview hidden" aria-label="Selezione missioni">
+  <button class="mission-card" type="button" data-start="profile"><div><div class="mission-number">GIOCO 01 / ANALISI</div><h3>Profilo invisibile</h3><p>Quali informazioni sono dichiarate, quali possono essere dedotte e quali sono semplici supposizioni?</p></div><div class="card-foot"><span>8 casi · scelta ragionata</span><span class="card-badge" id="badge-profile">DA INIZIARE</span><span class="game-cta">Inizia →</span></div></button>
+  <button class="mission-card" type="button" data-start="prompt"><div><div class="mission-number">GIOCO 02 / PRIVACY</div><h3>Prompt Zero</h3><p>Ripulisci quattro richieste prima di inviarle a un'AI. Conserva ciò che serve, generalizza, elimina il superfluo.</p></div><div class="card-foot"><span>4 scenari · 24 decisioni</span><span class="card-badge" id="badge-prompt">DA INIZIARE</span><span class="game-cta">Inizia →</span></div></button>
+  <button class="mission-card" type="button" data-start="injection"><div><div class="mission-number">GIOCO 03 / ATTACCHI</div><h3>Injection Firewall</h3><p>Prima scopri con un esempio guidato come funziona una prompt injection. Poi smaschera le istruzioni malevole nascoste nei documenti.</p></div><div class="card-foot"><span>4 documenti · analisi del testo</span><span class="card-badge" id="badge-injection">DA INIZIARE</span><span class="game-cta">Inizia →</span></div></button>
+</section>
+<section id="stage" class="stage" aria-label="Missione attiva">
+  <div class="stage-top"><button class="btn-link" id="back" type="button">← Torna alle missioni</button><div class="stats"><span class="stat">PUNTI MISSIONE: <b id="score-now">0</b></span><span class="stat">COMPLETATE: <b id="done-count">0/3</b></span></div></div>
+  <div class="game-head"><div><div class="section-kicker" id="stage-kicker"></div><h2 id="stage-title"></h2><p class="game-desc" id="stage-desc"></p></div><div class="progressbox"><span id="stage-progress-label" aria-live="polite"></span><div class="progress-track"><div class="progress-fill" id="stage-progress-bar"></div></div></div></div>
+  <div class="game-panel" id="game-content" aria-live="polite"></div>
+</section>
+<section id="finish-all" class="complete hidden" aria-label="Risultato finale"><div class="complete-label">LABORATORIO COMPLETATO</div><h2 style="margin-top:18px">Missione compiuta.</h2><div class="big-score" id="total-score">0</div><p>Hai affrontato tre problemi reali della sicurezza dell'AI: distinguere fatti da inferenze, minimizzare i dati e riconoscere istruzioni nascoste in fonti non attendibili.</p><div class="table-results" id="score-breakdown"></div><div class="complete-actions"><button type="button" class="primary" id="restart-all">Riparti da zero</button><button type="button" class="secondary" id="show-home">Rivedi le missioni</button></div></section>
+</main><footer><span>Crescere Digitali</span><span>CyberSecurity per ragazzi · AI: come funziona e cosa sa di noi</span></footer><script src="script.js"></script></body></html>
